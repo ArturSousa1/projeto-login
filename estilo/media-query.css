@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Configurações para Tablets */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient(to right, #354cdd, #4CC3DC);
+    }
+
+    section {
+        height: 300px;
+        width: 80%;
+    }
+
+    div#foto {
+        float: left;
+        width: 30%;
+        height: 500px;
+    }
+
+    div#login {
+        float: right;
+        width: 70%;
+    }
+     div p {
+        padding: 10px;
+     }
+    #ientrar {
+        width: 98%;
+    }
+
+    div a {
+        width: 98%;
+    }
+
+    div input {
+        width: 93%;
+    }
+}
+/* Configurações para Desktop */
+@media screen and (min-width:992px) {
+    body {
+        background-image: linear-gradient(to right, #354cdd, #4CC3DC);
+    }
+
+    section {
+        height: 300px;
+        width: 950px;
+    }
+
+    div#foto {
+        float: right;
+        width: 50%;
+        height: 500px;
+    }
+
+    div#login {
+        float: left;
+        width: 50%;
+    }
+
+    #ientrar {
+        width: 98%;
+    }
+
+    div a {
+        width: 98%;
+    }
+
+    div input {
+        width: 93%;
+    }
+}

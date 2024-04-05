@@ -4,67 +4,119 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root{
-    --cor-principal: #1933DB;
+    --cor-principal: #354cdd;
     --cor-suave: #4CC3DC;
     --cor-contraste: #6B570C;
 }
+
 html,
 body {
     width: 100vw;
     height: 100vh;
 }
-h1{
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-p{
-    text-align: justify;
-    margin-bottom: 10px;
-}
-#iemail,#isenha{
-    border: 3px solid black;
-    width: 92%;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 2px;
-}
-#ientrar{
-    width: 98%;
-    padding: 5px;
-    margin: 3px;
-    border-radius: 5px;
-    background-color: var(--cor-suave);
+
+body {
+    background-color: var(--cor-principal);
 }
 
 div#login{
-height:300px;
-padding: 8px;
+    text-align: center;
+    display: block;
 }
-body{
-    background-color:var(--cor-principal) ;
+
+div#login h1{
+    font-size: 1.2em;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
+
+div#login p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
 main{
-    position: relative;
-    top: 50%;
-    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;   
 }
+
 section{
     background-color: white;
     position: absolute;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
     height: 500px;
-    width: 250px;
-    border-radius: 15px;
+    width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.566);
+    transition-timing-function: ease;
+    transition: width 1s, height 1s;
+    transform: translate(-50%, -50%);
 }
 
-div img{
-    width: 100%;
+div#foto{
+    background-image: url(/img/pexels-pixabay-531756.jpg);
+    background-size: cover;
+    background-position:center center;
     height:200px;
-    border-radius: 15px 15px 0px 0px;
+    display: block;
+}
+
+div.campo{
+    height: 43px;
+    padding-top: 3px;
+    padding-right: 2px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    background-color: var(--cor-principal);
+}
+
+#ientrar{
+    height: 40px;
+    border: none;
+    display: block;
+    margin: 5px 5px;
+    border-radius: 10px;
+    width: 96%;
+    cursor: pointer;
+    background-color: #ad8c14;
+    font-size: 1em;
+}
+#ientrar:hover{
+    background-color:#354cdd;
+}
+div a{
+    color: black;
+    font-size: 1em;
+    display: block;
+    padding-top: 3px;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px 5px;
+    width: 96%;
+    text-decoration: none;
+    background-color: var(--cor-contraste);
+}
+div a:hover{
+    background-color: #354cdd;
+}
+div span{
+    color: white;
+}
+div input{
+    display: inline-block;
+    width: 89%;
+    border-radius: 10px;
+    height: 40px;
+    background-color: var(--cor-suave);
+    border: none;
+}
+div input:focus-within{
+    background-color: white;
 }
